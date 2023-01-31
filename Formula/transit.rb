@@ -1,5 +1,5 @@
 class Transit < Formula
-  desc "CLI tool that interacts with local transit information"
+  desc "CLI tool that interacts with local transit information."
   homepage "https://github.com/ismailshak/transit"
   sha256 "62f173b11fbaca7c7fa20fa449047a7f94b0c965d08e15e955b12e7ae483bae0"
   license "MIT"
