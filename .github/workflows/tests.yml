@@ -1,9 +1,10 @@
+on: [pull_request]
 name: brew test-bot
-on:
-  push:
-    branches:
-      - main
-  pull_request:
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test-bot:
     strategy:
