@@ -3,7 +3,6 @@ class Transit < Formula
   homepage "https://github.com/ismailshak/transit"
   version "0.4.0"
   license "MIT"
-  bottle :unneeded
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/ismailshak/transit/releases/download/v0.4.0/transit_Linux_x86_64.tar.gz"
