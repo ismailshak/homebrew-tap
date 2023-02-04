@@ -1,14 +1,9 @@
 class Transit < Formula
   desc "CLI tool that interacts with local transit information"
   homepage "https://github.com/ismailshak/transit"
+  version "0.4.0"
   license "MIT"
-
-  bottle do
-    root_url "https://github.com/ismailshak/homebrew-tap/releases/download/transit-86.64"
-    rebuild 2
-    sha256 cellar: :any_skip_relocation, monterey:     "91f7dbaaa47814f5ad0d020b1f8d176e52b1b0ecf6320d91ed43074624002786"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "1a3c8f435b2670d9d21ac980fdcecc77fed543d1d693c33cdaaa05360a88c0bf"
-  end
+  bottle :unneeded
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/ismailshak/transit/releases/download/v0.4.0/transit_Linux_x86_64.tar.gz"
