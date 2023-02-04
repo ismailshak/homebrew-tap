@@ -5,9 +5,9 @@ class Transit < Formula
 
   bottle do
     root_url "https://github.com/ismailshak/homebrew-tap/releases/download/transit-86.64"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, monterey:     "3a6ac0f01161cabf8226d4651f1931d7f540971b8433a70f34265b2180ad5ee9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "73cb4655f1622365cfb71a7f882b39efecadaabaee5a00e84eb09f6d35f168ac"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, monterey:     "91f7dbaaa47814f5ad0d020b1f8d176e52b1b0ecf6320d91ed43074624002786"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1a3c8f435b2670d9d21ac980fdcecc77fed543d1d693c33cdaaa05360a88c0bf"
   end
 
   if OS.linux? && Hardware::CPU.intel?
