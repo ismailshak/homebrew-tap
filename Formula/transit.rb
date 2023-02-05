@@ -1,25 +1,25 @@
 class Transit < Formula
   desc "CLI tool that interacts with local transit information"
   homepage "https://github.com/ismailshak/transit"
-  version "0.4.1"
+  version "1.0.0"
   license "MIT"
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/ismailshak/transit/releases/download/v#{version}/transit_Linux_x86_64.tar.gz"
-    sha256 "591bfb6aa52fd473d19a46ef773044b34d33fc066081f196aadc1a68337ceae6"
+    sha256 "5ebc6aa1ffe4f62b7934d15ca6683df6c8ca9b9c01de4b10ac47ecfea32bfcd4"
   end
   if OS.linux? && Hardware::CPU.arm?
     url "https://github.com/ismailshak/transit/releases/download/v#{version}/transit_Linux_arm64.tar.gz"
-    sha256 "8a6b661cf6b5fd106b635126bdcda0c65d7ceaae17bd8d8a89306de40f3d2bc7"
+    sha256 "e958171b2a62bb39c4a5af2a84494b2477ae14a0aa9ec25c9c4082e070ef489c"
   end
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/ismailshak/transit/releases/download/v#{version}/transit_Darwin_x86_64.tar.gz"
-    sha256 "c5dd7845370a6bb3a2597b1fe58b4820b2a7d8a7187cad82b31ef9497ec02ddf"
+    sha256 "33d32cb1f9915520c5d06a7f1483f09fcbbb3ec4439b523132528296f8249e43"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/ismailshak/transit/releases/download/v#{version}/transit_Darwin_arm64.tar.gz"
-    sha256 "35132c39006edd1f72e2c13bfc9826b40a13a6d4ee2873cdb30f6b986b8f75c1"
+    sha256 "8d1fd7e9b67ffcfc9040939fe234ae2cb116221d76c5d48829f2ac05fe7b7546"
   end
 
   def install
