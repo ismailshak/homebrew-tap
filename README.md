@@ -1,10 +1,10 @@
-# `ismailshak`'s Tap
+# Personal Homebrew Tap
 
 ## How do I install these formulae?
 
 `brew install ismailshak/tap/<formula>`
 
-Or 
+Or
 
 ```
 brew tap ismailshak/tap
@@ -13,7 +13,7 @@ brew install <formula>
 
 ## How do I update a newly released version of a formula?
 
-`brew update && brew upgrade <formula>
+`brew update && brew upgrade <formula>`
 
 ## Documentation
 
