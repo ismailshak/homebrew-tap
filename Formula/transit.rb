@@ -11,7 +11,7 @@ class Transit < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ismailshak/transit/releases/download/v1.2.2/transit_Darwin_arm64.tar.gz"
-      sha256 "7a952135a4f46ed993cb984a28a5525640a80dfef0d1a75d7704aecabd985f2f"
+      sha256 "147a51f44a9f058ba171ae889d484dcba9969c2a05fe9dce70dccfb6421a2e9a"
 
       def install
         bin.install "transit"
@@ -22,7 +22,7 @@ class Transit < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ismailshak/transit/releases/download/v1.2.2/transit_Linux_arm64.tar.gz"
-      sha256 "63b468f1c4689e1f01b5d08f10794e75692f0b7d70de223e3cd51e19c22d5b3f"
+      sha256 "817250a169a68ec3d121a522caa41eddb2d7e0aa422f923dec33c8e952c2cd25"
 
       def install
         bin.install "transit"
